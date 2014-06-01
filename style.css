@@ -1,0 +1,89 @@
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 200;
+	color: #FFF;
+	padding: 0;
+	margin: 0;
+	background: #88EEFF -webkit-linear-gradient(#88EEFF, #99AAFF) center no-repeat fixed;
+}
+
+.global a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+header.global {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 270px;
+	height: 100%;
+	box-sizing: border-box;
+	font-weight: 100;
+	padding: 30px 30px 60px;
+	background: rgba(0, 0, 0, 0.42);
+	overflow: hidden;
+	z-index: 10;
+}
+
+header.global h1, header.global h2 {
+	font-weight: inherit;
+}
+
+header.global h1 {
+	font-size: 2.460em;
+	letter-spacing: 2px;
+	padding: 20px 0;
+	margin: 0;
+}
+
+header.global h2 {
+	font-size: 1.388em;
+	line-height: 1.678em;
+	padding: 10px 0;
+	margin: 0;
+}
+
+footer.global {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 260px;
+	box-sizing: border-box;
+	font-size: 0.80em;
+	font-weight: 200;
+	padding: 30px;
+	z-index: 20;
+}
+
+#content {
+	/*position: fixed;*/
+	/*top: 0;*/
+	/*right: 0;*/
+	/*width: 300px;*/
+	height: 80%;
+	box-sizing: border-box;
+	padding: 0;
+	/*background: rgba(0, 0, 0, 0.277);*/
+	overflow: scroll;
+}
+
+.gayradient {
+	width: 210px;
+	height: 210px;
+	padding: 1px 0;
+	margin: 0 0 30px;
+	cursor: pointer;
+	border-radius: 800px;
+}
+
+.gayradient span {
+	display: block;
+	font-weight: 200;
+	text-align: center;
+	padding: 10px;
+	margin: 85px 10px 0;
+	background: rgba(0, 0, 0, 0.33);
+	border-radius: 12px;
+}
