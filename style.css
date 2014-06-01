@@ -21,9 +21,9 @@ header.global {
 	height: 100%;
 	box-sizing: border-box;
 	font-weight: 100;
-	padding: 30px 30px 60px;
+	padding: 30px 0 60px;
 	background: rgba(0, 0, 0, 0.42);
-	overflow: hidden;
+	overflow: scroll;
 	z-index: 10;
 }
 
@@ -34,14 +34,14 @@ header.global h1, header.global h2 {
 header.global h1 {
 	font-size: 2.460em;
 	letter-spacing: 2px;
-	padding: 20px 0;
+	padding: 0 30px 20px;
 	margin: 0;
 }
 
 header.global h2 {
 	font-size: 1.388em;
 	line-height: 1.678em;
-	padding: 10px 0;
+	padding: 10px 30px 20px;
 	margin: 0;
 }
 
@@ -58,22 +58,17 @@ footer.global {
 }
 
 #content {
-	/*position: fixed;*/
-	/*top: 0;*/
-	/*right: 0;*/
-	/*width: 300px;*/
 	height: 80%;
 	box-sizing: border-box;
 	padding: 0;
-	/*background: rgba(0, 0, 0, 0.277);*/
 	overflow: scroll;
 }
 
 .gayradient {
-	width: 210px;
-	height: 210px;
+	width: 200px;
+	height: 200px;
 	padding: 1px 0;
-	margin: 0 0 30px;
+	margin: 0 auto 30px;
 	cursor: pointer;
 	border-radius: 800px;
 }
@@ -82,8 +77,9 @@ footer.global {
 	display: block;
 	font-weight: 200;
 	text-align: center;
-	padding: 10px;
+	padding: 5px;
 	margin: 85px 10px 0;
 	background: rgba(0, 0, 0, 0.33);
-	border-radius: 12px;
+	border-radius: 800px;
+	cursor: text;
 }

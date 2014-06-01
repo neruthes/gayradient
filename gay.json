@@ -1,10 +1,11 @@
 {
 	"gay" : [
 		"#88EEFF, #99AAFF",
-		"#FA9F4B, #CA2B19",
+		"#FABF5B, #CA2B19",
 		"#DDEEFF, #00DEFF",
-		"#81C7D4, #5DAC81",
 		"#FBE251, #3A8FB7",
-		"#DAC9A6, #FB9966"
+		"#81C7D4, #5DAC81",
+		"#DAC9A6, #FB9966",
+		"#FEDFE1, #5DAC81"
 	]
 }
