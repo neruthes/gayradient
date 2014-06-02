@@ -11,7 +11,8 @@ body {
 	color: #FFF;
 	padding: 0;
 	margin: 0;
-	background-color: rgba(0, 0, 0, 0);
+	background: rgba(0, 0, 0, 0) fixed no-repeat center;
+	background-size: cover;
 }
 
 #bg {
@@ -20,7 +21,8 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0);
+	background: rgba(0, 0, 0, 0) fixed no-repeat center;
+	background-size: cover;
 	z-index: 3;
 	-webkit-transition: opacity 300ms ease;
 	-moz-transition: opacity 300ms ease;
