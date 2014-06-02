@@ -5,6 +5,8 @@ function wget(url) {
 	return ajax.responseText;
 };
 
+document.getElementById("bg").style.height = window.innerHeight + "px";
+
 window.gay = {
 	"author" : "Joy Neop"
 };
