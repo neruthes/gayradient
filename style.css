@@ -38,8 +38,7 @@ header.global {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 20%;
-	min-width: 270px;
+	width: 100%;
 	box-sizing: border-box;
 	font-weight: 100;
 	padding: 20px 0 0;
@@ -48,9 +47,8 @@ header.global {
 }
 
 header.global h1 {
-	font-size: 2.260em;
+	font-size: 2.660em;
 	font-weight: inherit;
-	letter-spacing: 2px;
 	text-align: center;
 	padding: 0;
 	margin: 0;
@@ -60,60 +58,60 @@ footer.global {
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	width: 20%;
+	width: 100%;
 	min-width: 270px;
 	box-sizing: border-box;
-	font-size: 0.60em;
-	font-weight: 300;
-	opacity: 0.62;
-	letter-spacing: 1px;
-	padding: 0 0 30px;
+	font-size: 0.68em;
+	font-weight: 400;
+	text-align: center;
+	/*letter-spacing: 1px;*/
+	opacity: 0.9;
+	padding: 0 0 10px;
 	z-index: 30;
-}
-
-footer.global > div {
-	width: 200px;
-	margin: 0 auto;
 }
 
 #cont {
 	position: fixed;
 	top: 0;
-	left: 0;
-	width: 20%;
-	min-width: 270px;
+	left: 50%;
+	width: 720px;
 	height: 100%;
 	box-sizing: border-box;
 	padding: 110px 0 100px;
-	background: rgba(0, 0, 0, 0.26);
+	margin: 0 0 0 -360px;
+	/*background: rgba(0, 0, 0, 0.2);*/
 	overflow: hidden;
 	z-index: 10
 }
 
 #content {
+	width: 610px;
 	height: 100%;
 	box-sizing: border-box;
-	padding: 0;
+	padding: 0 20px;
+	margin: 0 auto;
 	overflow: scroll;
 }
 
 .gayradient {
-	width: 200px;
+	float: left;
+	width: 170px;
 	height: 70px;
+	font-size: 0.72em;
 	padding: 1px 0;
-	margin: 0 auto 30px;
+	margin: 0 10px 20px;
 	cursor: pointer;
-	border-radius: 800px;
+	border-radius: 6px;
 }
 
 .gayradient span {
 	display: block;
-	height: 32px;
+	height: 28px;
 	box-sizing: border-box;
 	font-weight: 200;
 	text-align: center;
 	padding: 5px;
-	margin: 19px 10px 0;
+	margin: 21px 10px 0;
 	background: rgba(0, 0, 0, 0.55);
 	border-radius: 800px;
 	cursor: text;
