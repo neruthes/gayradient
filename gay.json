@@ -1,11 +1,20 @@
 {
 	"gay" : [
-		"#88EEFF, #99AAFF",
-		"#FABF5B, #CA2B19",
-		"#DDEEFF, #00DEFF",
-		"#FBE251, #3A8FB7",
-		"#81C7D4, #5DAC81",
-		"#DAC9A6, #FB9966",
-		"#FEDFE1, #5DAC81"
+		"#88EEff, #99AAff",
+		"#4bc6e3, #0e3c60",
+		"#d4f686, #0DD719",
+		"#1AD0fD, #1C68f3",
+		"#f7a7fc, #8653fa",
+		"#64E8CD, #59C7f7",
+		"#feefb8, #fdb32b",
+		"#6DE29B, #AF9FEA",
+		"#EB4fBD, #1CA9f9",
+		"#fd8b4a, #fc56c3",
+		"#fABf5B, #CA2B19",
+		"#DDEEff, #00DEff",
+		"#fBE251, #3A8fB7",
+		"#DAC9A6, #fB9966",
+		"#fEDfE1, #5DAC81",
+		"#2bbbf8, #236895"
 	]
 }

@@ -23,11 +23,9 @@ gay.changeBg = function (theGayYouLike) {
 	setTimeout('document.getElementById("bg").style.opacity = "1";', 250);
 };
 
-document.body.onload = function () {
-	gay.allGays = JSON.parse(wget("gay.json"));
-	for (var i = 0; i < gay.allGays.gay.length; i++) {
-		document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + gay.templ.replace(/GAYRADIENT/g, gay.allGays.gay[i]).replace(/THISID/g, "'gay-id-" + i + "'");
-	}
-	document.getElementById("bg").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[0]);
-	document.getElementById("body").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[0]);
+gay.allGays = JSON.parse(wget("gay.json"));
+for (var i = 0; i < gay.allGays.gay.length; i++) {
+	document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + gay.templ.replace(/GAYRADIENT/g, gay.allGays.gay[i].toUpperCase()).replace(/THISID/g, "'gay-id-" + i + "'");
 }
+document.getElementById("bg").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[0]);
+document.getElementById("body").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[0]);
