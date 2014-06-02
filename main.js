@@ -4,13 +4,23 @@ function wget(url) {
 	ajax.send();
 	return ajax.responseText;
 };
+
 window.gay = {
 	"author" : "Joy Neop"
 };
+
 gay.templ = '<div class="gayradient" datagay="GAYRADIENT" style="background-image: -webkit-linear-gradient(GAYRADIENT);" onclick="gay.changeBg(THISID)" id=THISID><span>GAYRADIENT</span></div>';
+
 gay.templMini = '-webkit-linear-gradient(GAYRADIENT)';
+
+gay.sss = "";
+
 gay.changeBg = function (theGayYouLike) {
-	document.getElementById("bg").style.backgroundImage = document.getElementById(theGayYouLike).style.backgroundImage;
+	gay.sss = document.getElementById(theGayYouLike).style.backgroundImage;
+	document.getElementById("body").style.backgroundImage = gay.sss
+	document.getElementById("bg").style.opacity = "0";
+	setTimeout('document.getElementById("bg").style.backgroundImage = gay.sss;', 200);
+	setTimeout('document.getElementById("bg").style.opacity = "1";', 250);
 };
 
 document.body.onload = function () {
@@ -19,4 +29,5 @@ document.body.onload = function () {
 		document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + gay.templ.replace(/GAYRADIENT/g, gay.allGays.gay[i]).replace(/THISID/g, "'gay-id-" + i + "'");
 	}
 	document.getElementById("bg").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[0]);
+	document.getElementById("body").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[0]);
 }

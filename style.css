@@ -1,16 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300);
 
 body {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 	font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	color: #FFF;
 	padding: 0;
 	margin: 0;
-	background: #88EEFF -webkit-linear-gradient(#88EEFF, #99AAFF) center no-repeat fixed;
-	-webkit-transition: all 1500ms ease;
-	-moz-transition: all 1500ms ease;
-	transition: all 1500ms ease;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 #bg {
@@ -19,7 +20,11 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	background: rgba(0, 0, 0, 0);
 	z-index: 3;
+	-webkit-transition: opacity 300ms ease;
+	-moz-transition: opacity 300ms ease;
+	transition: opacity 300ms ease;
 }
 
 .global a {
@@ -32,6 +37,7 @@ header.global {
 	top: 0;
 	left: 0;
 	width: 20%;
+	min-width: 270px;
 	box-sizing: border-box;
 	font-weight: 100;
 	padding: 20px 0 0;
@@ -40,7 +46,7 @@ header.global {
 }
 
 header.global h1 {
-	font-size: 2.460em;
+	font-size: 2.260em;
 	font-weight: inherit;
 	letter-spacing: 2px;
 	text-align: center;
@@ -53,10 +59,11 @@ footer.global {
 	bottom: 0;
 	left: 0;
 	width: 20%;
+	min-width: 270px;
 	box-sizing: border-box;
-	font-size: 0.80em;
+	font-size: 0.60em;
 	font-weight: 300;
-	color: rgba(255, 255, 255, 0.42);
+	opacity: 0.62;
 	letter-spacing: 1px;
 	padding: 0 0 30px;
 	z-index: 30;
@@ -72,10 +79,11 @@ footer.global > div {
 	top: 0;
 	left: 0;
 	width: 20%;
+	min-width: 270px;
 	height: 100%;
 	box-sizing: border-box;
 	padding: 110px 0 100px;
-	background: rgba(0, 0, 0, 0.42);
+	background: rgba(0, 0, 0, 0.32);
 	overflow: hidden;
 	z-index: 10
 }
