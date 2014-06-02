@@ -74,18 +74,18 @@ footer.global {
 	position: fixed;
 	top: 0;
 	left: 50%;
-	width: 720px;
+	width: 820px;
 	height: 100%;
 	box-sizing: border-box;
 	padding: 110px 0 100px;
-	margin: 0 0 0 -360px;
+	margin: 0 0 0 -410px;
 	/*background: rgba(0, 0, 0, 0.2);*/
 	overflow: hidden;
 	z-index: 10
 }
 
 #content {
-	width: 610px;
+	width: 800px;
 	height: 100%;
 	box-sizing: border-box;
 	padding: 0 20px;
@@ -95,11 +95,11 @@ footer.global {
 
 .gayradient {
 	float: left;
-	width: 170px;
-	height: 70px;
+	width: 150px;
+	height: 150px;
 	font-size: 0.72em;
-	padding: 1px 0;
-	margin: 0 10px 20px;
+	padding: 0;
+	margin: 0 20px 50px;
 	cursor: pointer;
 	border-radius: 6px;
 }
@@ -111,7 +111,7 @@ footer.global {
 	font-weight: 200;
 	text-align: center;
 	padding: 5px;
-	margin: 21px 10px 0;
+	margin: 61px 10px 0;
 	background: rgba(0, 0, 0, 0.55);
 	border-radius: 800px;
 	cursor: text;
