@@ -100,8 +100,9 @@ footer.global {
 	font-size: 0.72em;
 	padding: 0;
 	margin: 0 20px 50px;
-	cursor: pointer;
+	box-shadow: inset rgba(0, 0, 0, 0.6) 0 3px 7px;
 	border-radius: 800px;
+	cursor: pointer;
 }
 
 .gayradient span {
