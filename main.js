@@ -20,7 +20,7 @@ gay.sss = "";
 
 gay.changeBg = function (theGayYouLike) {
 	gay.sss = document.getElementById(theGayYouLike).style.backgroundImage;
-	document.getElementById("body").style.backgroundImage = gay.sss
+	document.getElementById("body").style.backgroundImage = gay.sss;
 	document.getElementById("bg").style.opacity = "0";
 	setTimeout('document.getElementById("bg").style.backgroundImage = gay.sss;', 200);
 	setTimeout('document.getElementById("bg").style.opacity = "1";', 250);
