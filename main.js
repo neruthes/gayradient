@@ -12,9 +12,9 @@ window.gay = {
 	"author" : "Joy Neop"
 };
 
-gay.templ = '<div class="gayradient" datagay="GAYRADIENT" style="background-image: linear-gradient(GAYRADIENT);" onclick="gay.changeBg(THISID)" id=THISID><span>GAYRADIENT</span></div>';
+gay.templ = '<div class="gayradient" datagay="GAYRADIENT" style="background-image: -webkit-linear-gradient(GAYRADIENT);" onclick="gay.changeBg(THISID)" id=THISID><span>GAYRADIENT</span></div>';
 
-gay.templMini = 'linear-gradient(GAYRADIENT)';
+gay.templMini = '-webkit-linear-gradient(GAYRADIENT)';
 
 gay.sss = "";
 
