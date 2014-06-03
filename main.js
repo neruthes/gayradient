@@ -1,5 +1,5 @@
 if (window.location.hostname != "www.gayradient.com") {
-	// window.location.replace("http://www.gayradient.com/");
+	window.location.replace("http://www.gayradient.com/");
 }
 
 function wget(url) {
