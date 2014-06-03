@@ -35,7 +35,7 @@ header.global {
 	box-sizing: border-box;
 	font-weight: 100;
 	text-align: center;
-	padding: 150px 0;
+	padding: 180px 0 120px;
 	overflow: visible;
 	z-index: 20;
 }
@@ -89,7 +89,7 @@ footer.global {
 	font-size: 0.77em;
 	padding: 0;
 	margin: 0 30px 70px;
-	box-shadow: inset rgba(0, 0, 0, 0.6) 0 3px 7px;
+	box-shadow: inset rgba(0, 0, 0, 0.485) 0 2px 5px;
 	border-radius: 800px;
 	cursor: pointer;
 	/*z-index: 300;*/
