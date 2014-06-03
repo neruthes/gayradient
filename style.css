@@ -35,7 +35,7 @@ header.global {
 	box-sizing: border-box;
 	font-weight: 100;
 	text-align: center;
-	padding: 180px 0 120px;
+	padding: 180px 0 100px;
 	overflow: visible;
 	z-index: 20;
 }
@@ -76,7 +76,7 @@ footer.global {
 #content {
 	width: 720px;
 	box-sizing: border-box;
-	padding: 0 20px;
+	padding: 20px;
 	margin: 0 auto;
 	overflow: auto;
 	/*z-index: 260;*/
@@ -89,8 +89,8 @@ footer.global {
 	font-size: 0.77em;
 	padding: 0;
 	margin: 0 30px 70px;
-	box-shadow: inset rgba(0, 0, 0, 0.485) 0 2px 5px;
-	border-radius: 800px;
+	box-shadow: rgba(0, 0, 0, 0.285) 0 1px 4px;
+	border-radius: 2600px;
 	cursor: pointer;
 	/*z-index: 300;*/
 }
