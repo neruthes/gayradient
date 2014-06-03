@@ -32,3 +32,6 @@ for (var i = 0; i < gay.allGays.gay.length; i++) {
 }
 document.getElementById("bg").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[0]);
 document.getElementById("body").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[0]);
+
+console.log("Hi, I'm seeking 2015 summer internship...");
+console.log("Intersted in me? Invite me to send an application to your company after reading my resume, thanks! http://www.joyneop.com/resume/ ");
