@@ -1,10 +1,7 @@
 /*@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300);*/
 
 body {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
+	overflow: scroll;
 	font-family: 'Helvetica Neue', 'Helvetica-Light', 'Helvetica Light', Helvetica, 'Roboto', Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
@@ -23,7 +20,7 @@ body {
 	height: 100%;
 	background: rgba(0, 0, 0, 0) fixed no-repeat center;
 	background-size: cover;
-	z-index: 3;
+	z-index: 1;
 	-webkit-transition: opacity 300ms ease;
 	-moz-transition: opacity 300ms ease;
 	transition: opacity 300ms ease;
@@ -37,17 +34,23 @@ body {
 header.global {
 	box-sizing: border-box;
 	font-weight: 100;
+	text-align: center;
 	padding: 20px 0 50px;
 	overflow: visible;
 	z-index: 20;
 }
 
-header.global h1 {
+h1 {
 	font-size: 4.10em;
 	font-weight: inherit;
-	text-align: center;
+	letter-spacing: 1px;
 	padding: 0;
 	margin: 0;
+}
+
+h2 {
+	font-weight: inherit;
+	letter-spacing: 1px;
 }
 
 footer.global {
@@ -55,7 +58,7 @@ footer.global {
 	min-width: 270px;
 	box-sizing: border-box;
 	font-size: 0.68em;
-	font-weight: 400;
+	font-weight: 300;
 	text-align: center;
 	opacity: 0.9;
 	padding: 0 0 10px;
@@ -63,16 +66,11 @@ footer.global {
 }
 
 #cont {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	position: relative;
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	overflow: scroll;
-	z-index: 10
+	z-index: 10;
 }
 
 #content {
@@ -81,6 +79,7 @@ footer.global {
 	padding: 0 20px;
 	margin: 0 auto;
 	overflow: auto;
+	z-index: 260;
 }
 
 .gayradient {
@@ -93,6 +92,7 @@ footer.global {
 	box-shadow: inset rgba(0, 0, 0, 0.6) 0 3px 7px;
 	border-radius: 800px;
 	cursor: pointer;
+	z-index: 300;
 }
 
 .gayradient span {
@@ -109,6 +109,7 @@ footer.global {
 	border-radius: 800px;
 	cursor: text;
 	opacity: 0;
+	z-index: 310;
 	-webkit-transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
 	transition: all 300ms ease;
