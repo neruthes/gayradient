@@ -37,13 +37,13 @@ body {
 header.global {
 	box-sizing: border-box;
 	font-weight: 100;
-	padding: 20px 0;
+	padding: 20px 0 50px;
 	overflow: visible;
 	z-index: 20;
 }
 
 header.global h1 {
-	font-size: 2.660em;
+	font-size: 4.10em;
 	font-weight: inherit;
 	text-align: center;
 	padding: 0;
@@ -85,25 +85,27 @@ footer.global {
 
 .gayradient {
 	float: left;
-	width: 150px;
-	height: 150px;
-	font-size: 0.72em;
+	width: 130px;
+	height: 130px;
+	font-size: 0.77em;
 	padding: 0;
-	margin: 0 20px 50px;
+	margin: 0 30px 60px;
 	box-shadow: inset rgba(0, 0, 0, 0.6) 0 3px 7px;
 	border-radius: 800px;
 	cursor: pointer;
 }
 
 .gayradient span {
+	position: relative;
+	left: -20px;
 	display: block;
-	height: 28px;
+	width: 170px;
 	box-sizing: border-box;
 	font-weight: 200;
 	text-align: center;
-	padding: 5px;
-	margin: 61px 10px 0;
-	background: rgba(0, 0, 0, 0.55);
+	padding: 5px 0;
+	margin: 143px 0 0;
+	background: rgba(0, 0, 0, 0.2);
 	border-radius: 800px;
 	cursor: text;
 	opacity: 0;
