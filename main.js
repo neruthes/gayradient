@@ -34,8 +34,8 @@ gay.allGays = JSON.parse(wget("gay.json"));
 for (var i = 0; i < gay.allGays.gay.length; i++) {
 	document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + gay.templ.replace(/GAYRADIENT/g, gay.allGays.gay[i].toUpperCase()).replace(/THISID/g, "'gay-id-" + i + "'");
 }
-document.getElementById("bg").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[0]);
-document.getElementById("body").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[0]);
+document.getElementById("bg").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[Math.round(Math.random()*(gay.allGays.gay.length-1))]);
+document.getElementById("body").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[Math.round(Math.random()*(gay.allGays.gay.length-1))]);
 
 // console.log("Hi, I'm seeking 2015 summer internship...");
 // console.log("Intersted in me? Invite me to send an application to your company after reading my resume, thanks! http://www.joyneop.com/resume/ ");
