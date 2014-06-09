@@ -10,29 +10,22 @@ function wget(url) {
 };
 
 document.getElementById("body").style.height = window.innerHeight + "px";
-document.getElementById("bg-webkit").style.height = window.innerHeight + "px";
 document.getElementById("bg").style.height = window.innerHeight + "px";
 
 window.gay = {
 	"author" : "Joy Neop"
 };
 
-gay.webkitTempl = '<div class="gayradient" datagay="GAYRADIENT" style="background-image: linear-gradient(GAYRADIENT);" onclick="gay.changeBg(THISID)" id=THISID><span>GAYRADIENT</span></div>';
-gay.templ = gay.webkitTempl.replace(/-webkit-/, "");
-
-gay.webkitTemplMini = '-webkit-linear-gradient(GAYRADIENT)';
-gay.templMini = gay.webkitTemplMini.replace(/-webkit-/, "");
+gay.templ = '<div class="gayradient" datagay="GAYRADIENT" style="background-image: linear-gradient(GAYRADIENT);" onclick="gay.changeBg(THISID)" id=THISID><span>GAYRADIENT</span></div>';
+gay.templMini = 'linear-gradient(GAYRADIENT)';
 
 gay.sss = "";
 
 gay.changeBg = function (theGayYouLike) {
 	gay.sss = document.getElementById(theGayYouLike).style.backgroundImage;
 	document.getElementById("body").style.backgroundImage = gay.sss;
-	document.getElementById("bg-webkit").style.opacity = "0";
 	document.getElementById("bg").style.opacity = "0";
-	setTimeout('document.getElementById("bg-webkit").style.backgroundImage = "-webkit-" + gay.sss;', 200);
 	setTimeout('document.getElementById("bg").style.backgroundImage = gay.sss;', 200);
-	setTimeout('document.getElementById("bg-webkit").style.opacity = "1";', 250);
 	setTimeout('document.getElementById("bg").style.opacity = "1";', 250);
 };
 
@@ -40,7 +33,7 @@ gay.allGays = JSON.parse(wget("gay.json"));
 for (var i = 0; i < gay.allGays.gay.length; i++) {
 	document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + gay.templ.replace(/GAYRADIENT/g, gay.allGays.gay[i].toUpperCase()).replace(/THISID/g, "'gay-id-" + i + "'");
 }
-document.getElementById("bg-webkit").style.backgroundImage = gay.webkitTemplMini.replace(/GAYRADIENT/g, gay.allGays.gay[Math.round(Math.random()*(gay.allGays.gay.length-1))]);
+
 document.getElementById("bg").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[Math.round(Math.random()*(gay.allGays.gay.length-1))]);
 document.getElementById("body").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[Math.round(Math.random()*(gay.allGays.gay.length-1))]);
 
