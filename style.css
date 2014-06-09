@@ -11,7 +11,7 @@ body {
 	background-size: cover;
 }
 
-#bg {
+.bg {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -19,10 +19,17 @@ body {
 	height: 100%;
 	background: rgba(0, 0, 0, 0) fixed no-repeat center;
 	background-size: cover;
-	z-index: 1;
 	-webkit-transition: opacity 300ms ease;
 	-moz-transition: opacity 300ms ease;
 	transition: opacity 300ms ease;
+}
+
+#bg {
+	z-index: 1;
+}
+
+#bg-webkit {
+	z-index: 2;
 }
 
 .global a {
