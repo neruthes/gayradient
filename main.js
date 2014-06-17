@@ -9,8 +9,14 @@ function wget(url) {
 	return ajax.responseText;
 };
 
-document.getElementById("body").style.height = window.innerHeight + "px";
-document.getElementById("bg").style.height = window.innerHeight + "px";
+function initSize() {
+	document.getElementById("body").style.height = window.innerHeight + "px";
+	document.getElementById("bg").style.height = window.innerHeight + "px";
+}
+
+initSize();
+
+window.onresize = initSize;
 
 window.gay = {
 	"author" : "Joy Neop"
