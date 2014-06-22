@@ -1,5 +1,5 @@
 if (window.location.hostname != "www.gayradient.com") {
-	// window.location.replace("http://www.gayradient.com/");
+	window.location.replace("http://www.gayradient.com/");
 }
 
 function wget(url) {
@@ -38,14 +38,14 @@ gay.changeBg = function (gayID) {
 
 gay.allGays = JSON.parse(wget("gay.json"));
 for (var i = 0; i < gay.allGays.gay.length; i++) {
-	document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + gay.templ.replace(/GAYRADIENT/g, gay.allGays.gay[i].toUpperCase()).replace(/THISID/g, "gay-id-" + i);
+	document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + gay.templ.replace(/GAYRADIENT/g, gay.allGays.gay[i].toUpperCase()).replace(/THISID/g, "gay-" + i);
 }
 
 if (window.location.href.indexOf("#") != -1) {
 	gay.changeBg(window.location.hash.slice(1));
 	window.scrollTo(0, 0);
 } else {
-	gay.changeBg("gay-id-" + Math.round(Math.random()*(gay.allGays.gay.length-1)));
+	gay.changeBg("gay-" + Math.round(Math.random()*(gay.allGays.gay.length-1)));
 	window.scrollTo(0, 0);
 	// document.getElementById("bg").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[Math.round(Math.random()*(gay.allGays.gay.length-1))]);
 	// document.getElementById("body").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[Math.round(Math.random()*(gay.allGays.gay.length-1))]);
