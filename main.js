@@ -24,7 +24,7 @@ gay.initSize();
 
 window.onresize = gay.initSize;
 
-gay.templ = '<div class="gayradient" data-gay="GAYRADIENT" style="background-image: linear-gradient(GAYRADIENT);" onclick="gay.changeBg(THISSEQ)" id=\'THIS_ID\'><span>GAYRADIENT</span></div>';
+gay.templ = '<div class="gayradient" data-gay="GAYRADIENT" style="background-image: linear-gradient(GAYRADIENT);" onclick="gay.changeBg(THISSEQ)"><span>GAYRADIENT</span></div>';
 gay.templMini = 'linear-gradient(GAYRADIENT)';
 
 gay.sss = "";
@@ -41,7 +41,7 @@ gay.changeBg = function (gayID) {
 gay.allGays = JSON.parse(wget("gay.json"));
 
 for (var i = 0; i < gay.allGays.gay.length; i++) {
-	document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + gay.templ.replace(/GAYRADIENT/g, gay.allGays.gay[i].toUpperCase()).replace(/THISID/g, "gra-" + i).replace(/THISSEQ/g, i);
+	document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + gay.templ.replace(/GAYRADIENT/g, gay.allGays.gay[i].toUpperCase()).replace(/THISSEQ/g, i);
 }
 
 if (window.location.href.indexOf("#") != -1) {
