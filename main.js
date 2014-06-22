@@ -1,5 +1,5 @@
 if (window.location.hostname != "www.gayradient.com") {
-	window.location.replace("http://www.gayradient.com/");
+	// window.location.replace("http://www.gayradient.com/");
 }
 
 function wget(url) {
@@ -46,9 +46,12 @@ if (window.location.href.indexOf("#") != -1) {
 	window.scrollTo(0, 0);
 } else {
 	gay.changeBg("gay-id-" + Math.round(Math.random()*(gay.allGays.gay.length-1)));
-	document.getElementById("bg").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[Math.round(Math.random()*(gay.allGays.gay.length-1))]);
-	document.getElementById("body").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[Math.round(Math.random()*(gay.allGays.gay.length-1))]);
+	window.scrollTo(0, 0);
+	// document.getElementById("bg").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[Math.round(Math.random()*(gay.allGays.gay.length-1))]);
+	// document.getElementById("body").style.backgroundImage = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[Math.round(Math.random()*(gay.allGays.gay.length-1))]);
 }
+
+window.scrollTo(0, 0);
 
 // console.log("Hi, I'm seeking 2015 summer internship...");
 // console.log("Intersted in me? Invite me to send an application to your company after reading my resume, thanks! http://www.joyneop.com/resume/ ");
