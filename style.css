@@ -1,0 +1,116 @@
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300);*/
+
+body {
+	font-family: 'Helvetica Neue', 'Helvetica-Light', 'Helvetica Light', Helvetica, Roboto, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #FFF;
+	padding: 0;
+	margin: 0;
+	background: rgba(0, 0, 0, 0) fixed no-repeat center;
+	background-size: cover;
+}
+
+#bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0) fixed no-repeat center;
+	background-size: cover;
+	z-index: 1;
+	-webkit-transition: opacity 300ms ease;
+	-moz-transition: opacity 300ms ease;
+	transition: opacity 300ms ease;
+}
+
+.global a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+header.global {
+	box-sizing: border-box;
+	font-weight: 100;
+	text-align: center;
+	padding: 180px 0 100px;
+	overflow: visible;
+	z-index: 20;
+}
+
+h1 {
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', 'Helvetica-Light', 'Helvetica Light', Helvetica, Roboto, Arial, sans-serif;
+	font-size: 4.10em;
+	font-weight: 100;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font-family: 'HelveticaNeue-Thin', 'Helvetica Neue Thin', 'Helvetica Neue', 'Helvetica-Light', 'Helvetica Light', Helvetica, Roboto, Arial, sans-serif;
+	font-weight: 200;
+}
+
+footer.global {
+	width: 100%;
+	min-width: 270px;
+	box-sizing: border-box;
+	font-size: 0.68em;
+	font-weight: 300;
+	text-align: center;
+	opacity: 0.9;
+	padding: 30px 0 45px;
+	z-index: 30;
+}
+
+#cont {
+	position: relative;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	z-index: 10;
+}
+
+#content {
+	width: 720px;
+	box-sizing: border-box;
+	padding: 20px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.gayradient {
+	float: left;
+	width: 110px;
+	height: 110px;
+	font-size: 0.77em;
+	padding: 0;
+	margin: 0 30px 70px;
+	box-shadow: rgba(0, 0, 0, 0.285) 0 1px 4px;
+	border-radius: 6000px;
+	cursor: pointer;
+}
+
+.gayradient span {
+	position: relative;
+	left: -30px;
+	display: block;
+	width: 170px;
+	box-sizing: border-box;
+	font-weight: 200;
+	text-align: center;
+	padding: 5px 0;
+	margin: 123px 0 0;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 6000px;
+	cursor: text;
+	opacity: 0;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.gayradient:hover span {
+	opacity: 1;
+}
