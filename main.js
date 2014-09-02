@@ -3,7 +3,7 @@
 // (c) Copyright 2014 Joy Neop
 
 if (window.location.hostname != "www.gayradient.com") {
-	// window.location.replace("http://www.gayradient.com/");
+	window.location.replace("http://www.gayradient.com/");
 }
 
 window.gay = {};
@@ -17,10 +17,26 @@ gay.initSize();
 
 window.onresize = gay.initSize;
 
-gay.templ = '<div class="gayradient" style="background-image: linear-gradient(GAYRADIENT);" onclick="gay.changeBg(THISSEQ)"><span>GAYRADIENT</span></div>';
+gay.templ = '<a href="#gay-THISSEQ" class="gayradient" style="background-image: linear-gradient(GAYRADIENT);" testonclick="gay.changeBg(THISSEQ)"><span>GAYRADIENT</span></a>';
 gay.templMini = 'linear-gradient(GAYRADIENT)';
 
-gay.sss = "";
+gay.backgroundImageInUse = "";
+
+gay.changeBg = function (gayID) {
+	gay.backgroundImageInUse = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[gayID]);
+	document.getElementById("body").style.backgroundImage = gay.backgroundImageInUse;
+	document.getElementById("bg").style.opacity = "0";
+	setTimeout(function(){
+		document.getElementById("bg").style.backgroundImage = gay.backgroundImageInUse;
+	}, 200);
+	setTimeout(function(){
+		document.getElementById("bg").style.opacity = "1";
+	}, 250);
+};
+
+window.onhashchange = function(){
+	gay.changeBg(window.location.hash.slice(5));
+};
 
 var gayjax = new XMLHttpRequest();
 gayjax.open("GET", "gay.json", true);
@@ -36,15 +52,3 @@ gayjax.onload = function () {
 		gay.changeBg(Math.round(Math.random()*(gay.allGays.gay.length-1)));
 	}
 };
-
-gay.changeBg = function (gayID) {
-	window.location.hash = "gay-" + gayID;
-	gay.sss = gay.templMini.replace(/GAYRADIENT/g, gay.allGays.gay[gayID]);
-	document.getElementById("body").style.backgroundImage = gay.sss;
-	document.getElementById("bg").style.opacity = "0";
-	setTimeout('document.getElementById("bg").style.backgroundImage = gay.sss;', 200);
-	setTimeout('document.getElementById("bg").style.opacity = "1";', 250);
-};
-
-// console.log("Hi, I'm seeking 2015 summer internship...");
-// console.log("Intersted in me? Invite me to send an application to your company after reading my resume, thanks! http://www.joyneop.com/resume/ ");
