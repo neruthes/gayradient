@@ -3,7 +3,7 @@
 // (c) Copyright 2014 Joy Neop
 
 if (window.location.hostname != "www.gayradient.com") {
-	// window.location.replace("http://www.gayradient.com/");
+	window.location.replace("http://www.gayradient.com/");
 }
 
 window.gay = {};
@@ -49,7 +49,6 @@ gayjax.onload = function () {
 	if (window.location.href.indexOf("#") != -1) {
 		gay.changeBg(window.location.hash.slice(5));
 	} else {
-		// window.location.replace(window.location.href + Math.round(Math.random()*(gay.allGays.gay.length-1)));
 		window.location.hash = "#gay-" + Math.round(Math.random()*(gay.allGays.gay.length-1));
 		gay.changeBg(window.location.hash.slice(5));
 	}
