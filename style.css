@@ -39,17 +39,23 @@ header.global {
 
 h1 {
 	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', 'Helvetica-Light', 'Helvetica Light', Helvetica, Roboto, Arial, sans-serif;
-	/*font-family: Seravek, 'Helvetica Neue UltraLight', 'Helvetica Neue', 'Helvetica-Light', 'Helvetica Light', Helvetica, Roboto, Arial, sans-serif;*/
 	font-size: 4.10em;
 	font-weight: 200;
 	padding: 0;
 	margin: 0;
 }
 
+h1 img {
+	max-width: 320px;
+}
+
 h2 {
 	font-family: 'HelveticaNeue-Thin', 'Helvetica Neue Thin', 'Helvetica Neue', 'Helvetica-Light', 'Helvetica Light', Helvetica, Roboto, Arial, sans-serif;
-	/*font-family: Seravek, 'Helvetica Neue UltraLight', 'Helvetica Neue', 'Helvetica-Light', 'Helvetica Light', Helvetica, Roboto, Arial, sans-serif;*/
 	font-weight: 200;
+}
+
+h2 img {
+	max-width: 400px;
 }
 
 footer.global {
