@@ -1,3 +1,8 @@
+.jn-show-onload {
+	opacity: 0;
+	transition: all 1.5s ease;
+}
+
 body {
 	font-family: 'Helvetica Neue', 'Helvetica-Light', 'Helvetica Light', Helvetica, Roboto, Arial, sans-serif;
 	font-size: 18px;
