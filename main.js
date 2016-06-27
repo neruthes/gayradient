@@ -1,7 +1,3 @@
-if (window.location.hostname != "www.gayradient.com") {
-	window.location.replace("http://www.gayradient.com/");
-}
-
 window.gay = {};
 
 gay.initSize = function () {
@@ -51,7 +47,9 @@ gayjax.onload = function () {
 };
 
 for (var i = 0; i < document.getElementsByClassName('jn-show-onload').length; i++) {
-	window.setTimeout(function(){
-		document.getElementsByClassName('jn-show-onload')[i].style.opacity = 1;
-	}, 1000);
+	(function (elem) {
+		window.setTimeout(function () {
+			elem.style.opacity = 1;
+		}, 1000);
+	})(document.getElementsByClassName('jn-show-onload')[i]);
 };
