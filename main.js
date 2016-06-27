@@ -46,10 +46,8 @@ gayjax.onload = function () {
 	}
 };
 
-for (var i = 0; i < document.getElementsByClassName('jn-show-onload').length; i++) {
-	(function (elem) {
-		window.setTimeout(function () {
-			elem.style.opacity = 1;
-		}, 1000);
-	})(document.getElementsByClassName('jn-show-onload')[i]);
-};
+Array.forEach.call(document.getElementsByClassName('jn-show-onload'), function (node) {
+	window.setTimeout(function () {
+		node.style.opacity = 1;
+	}, 1000);
+});
