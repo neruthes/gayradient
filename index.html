@@ -3,31 +3,37 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Gayradient</title>
-	<link rel="favicon shortcut icon" href="/favicon.ico">
-	<link rel="apple-touch-icon" href="/favicon.png">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="keywords" content="Gayradient, Gradient, Gay, LGBT, Pride, Color, Palette" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" href="/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body id="body">
 	<div id="bg"></div>
 	<div id="cont">
 		<header class="global">
 			<!-- <h1><a href="/">Gayradient</a></h1> -->
-			<h1><a href="/"><img src="h1.png"></a></h1>
+			<h1><a href="/"><img class="jn-show-onload" src="h1.png" alt="Gayradient"></a></h1>
 			<!-- <h2>Diverse Colors, Better Appearance.</h2> -->
-			<h2><img src="h2.png"></h2>
+			<h2><img class="jn-show-onload" src="h2.png" alt="Diverse Colors, Better Appearance."></h2>
 		</header>
 		<div id="content">
 		</div>
 		<footer class="global">
 			<div>
-				<a href="http://www.joyneop.com/">&copy; 2014 Designed by Joy Neop.</a> 
+				<a href="https://joyneop.xyz/">&copy; <script type="text/javascript">document.write((new Date()).getFullYear());</script> Designed by Joy Neop.</a>
 				<a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Color patterns are released under CC BY 4.0 license.</a>
 			</div>
 		</footer>
 	</div>
+	<script type="text/javascript">
+	for (var i = 0; i < document.getElementsByClassName('jn-show-onload').length; i++) {
+		document.getElementsByClassName('jn-show-onload')[i].onload = function () {
+			this.style.opacity = 1;
+		};
+	};
+	</script>
 	<script type="text/javascript" src="main.js"></script>
-	<script type="text/javascript" src="g.js"></script>
-	<script type="text/javascript" src="http://joyneop.github.io/jn-alert-view.js"></script>
 	<!-- Nice to meet you : ) -->
 </body>
 </html>

@@ -1,11 +1,3 @@
-// Owned by: www.gayradient.com
-// File name: main.js
-// (c) Copyright 2014 Joy Neop
-
-if (window.location.hostname != "www.gayradient.com") {
-	window.location.replace("http://www.gayradient.com/");
-}
-
 window.gay = {};
 
 gay.initSize = function () {
@@ -53,3 +45,9 @@ gayjax.onload = function () {
 		gay.changeBg(window.location.hash.slice(5));
 	}
 };
+
+Array.forEach.call(document.getElementsByClassName('jn-show-onload'), function (node) {
+	window.setTimeout(function () {
+		node.style.opacity = 1;
+	}, 1000);
+});
