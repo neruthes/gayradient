@@ -31,7 +31,7 @@ window.onhashchange = function(){
 };
 
 var gayjax = new XMLHttpRequest();
-gayjax.open("GET", "gay.json", true);
+gayjax.open("GET", "./gay.json", true);
 gayjax.send();
 gayjax.onload = function () {
 	gay.allGays = JSON.parse(gayjax.responseText);
