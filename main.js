@@ -46,7 +46,7 @@ gayjax.onload = function () {
 	}
 };
 
-Array.forEach.call(document.getElementsByClassName('jn-show-onload'), function (node) {
+Array.prototype.forEach.call(document.getElementsByClassName('jn-show-onload'), function (node) {
 	window.setTimeout(function () {
 		node.style.opacity = 1;
 	}, 1000);
